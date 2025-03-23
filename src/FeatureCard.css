@@ -1,0 +1,78 @@
+.feature-card {
+  background: linear-gradient(
+    17deg,
+    #006edc 0%,
+    rgba(42, 172, 234, 1) 75%
+  ); /* Blue-Teal Gradient */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 24px;
+  width: 340px;
+  height: 180px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  /* color: white; */
+  overflow: hidden;
+}
+
+/* Neon Highlight at the Top */
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  width: 35px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    #ce4d2a,
+    #ff6b3d
+  ); /* Complementary Warm Gradient */
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(206, 77, 42, 0.6);
+}
+
+/* Hover Effect */
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(42, 172, 234, 0.3);
+  cursor: pointer;
+}
+
+/* Icon Styling */
+.icon-container {
+  font-size: 40px;
+  color: white; /* Complementary Highlight */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Glow Effect on Hover */
+.feature-card:hover .icon-container {
+  color: rgb(0, 41, 112); /* Softer Glow Effect */
+  transform: scale(1.15);
+  text-shadow: 0px 0px 12px rgba(255, 140, 102, 0.7);
+}
+
+/* Feature Title */
+.feature-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: white !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Feature Description */
+.feature-desc {
+  font-size: 15px;
+  color: #e0f5ff !important; /* Lightened text for readability */
+  line-height: 1.5;
+}

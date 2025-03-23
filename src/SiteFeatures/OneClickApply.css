@@ -1,0 +1,232 @@
+
+/* Import for Montserrat font family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+
+/* Container styles */
+.container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #006EDC 0%, rgb(86, 194, 248) 100%);
+}
+
+/* Left section styles */
+.left-section {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+/* Professional header styling */
+.header h1 {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+/* Right section styles */
+.right-section {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.input-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Input hover state with light blue background */
+.input-group input:hover {
+  background-color: #e6f3ff;
+  border-color: #a8d1ff;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #006EDC;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(0, 110, 220, 0.1);
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+}
+
+/* File upload styling */
+.file-upload-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.file-upload-button {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  background-color: #e6f3ff;
+  border: 1px solid #a8d1ff;
+  border-radius: 6px;
+  color: #006EDC;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-upload-button:hover {
+  background-color: #d1e7ff;
+}
+
+.file-name {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.error-message {
+  color: #e53935;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.file-info {
+  color: #4CAF50;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.privacy-notice {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.privacy-notice a {
+  color: #006EDC;
+  text-decoration: none;
+}
+
+.privacy-notice a:hover {
+  text-decoration: underline;
+}
+
+.apply-button-form {
+  width: 100%;
+  padding: 1rem;
+  background-color: #006EDC;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apply-button-form:hover {
+  background-color: #0062c4;
+  transform: translateY(-2px);
+}
+
+.apply-button-form:active {
+  transform: scale(0.98);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .left-section, .right-section {
+    padding: 2rem;
+  }
+  
+  .input-container {
+    max-width: 100%;
+  }
+  
+  .file-name {
+    max-width: 150px;
+  }
+}

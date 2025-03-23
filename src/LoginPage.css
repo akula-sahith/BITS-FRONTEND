@@ -1,0 +1,20 @@
+.login-page{
+    /* background-image: url('./assets/AuthenticationBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background: linear-gradient(17deg, #006EDC 0%, rgba(42, 172, 234, 1) 75%);;
+    width: 100vw;
+    height: 100vh;
+}
+
+.signup-page{
+    /* background-image: url('./assets/AuthenticationBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background: linear-gradient(17deg, #006EDC 0%, rgba(42, 172, 234, 1) 75%);
+    width: 100vw;
+    height: 100vh;
+}
+

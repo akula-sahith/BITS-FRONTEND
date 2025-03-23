@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+}
+button{
+    all: unset; /* Removes all default button styles */
+    cursor: pointer; /* Keeps the pointer cursor */
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+}
+/*.first-section{
+    background-image: url('./assets/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to bottom, #1A1A1A, #131313); */
+    /* width: 100vw;
+    height: 100vh; */
+    /* background-color: #090909;
+
+    width: 100vw;
+    height: 100vh; */
+ /* }*/ 
+ .first-section {
+    background: linear-gradient(17deg, #006EDC 0%, rgba(42, 172, 234, 1) 75%); 
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; Ensures text is readable */
+ } 
+
+
+p {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+@keyframes navbarAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-bar {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    animation: navbarAppear 0.8s ease-out;
+}
+.nav-one,.nav-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+/* .nav-one{
+    margin-left: 55px;
+} */
+.nav-one-button{
+    background-color: transparent;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-one-button:hover{
+    background-color: white;  /* Dark grey background on hover */
+    color: black;   
+}
+.login-btn {
+    background-color: transparent;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: white;  /* Dark grey background on hover */
+    color: black;            /* Keep text white */
+}
+
+.signup-btn {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.signup-btn:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers content vertically */
+    text-align: center;
+    width: 100%;
+    height: 500px; /* Adjust height dynamically */
+    padding: 40px;
+    gap: 40px;
+}
+
+.demo-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.hero-section p:first-of-type {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    max-width: 750px; /* Keeps text readable */
+}
+
+.hero-section p:nth-of-type(2) {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8); /* Slightly lighter than white */
+    max-width: 750px;
+    margin-top: 10px;
+}
+.demo-button:hover {
+    background-color: white;
+    color: black;
+    opacity: 1;  /* ✅ Correct opacity */
+}
+.try-now {
+    background-color: rgb(204, 255, 0);
+    box-shadow: rgba(204, 255, 0, 0.3) 0px 14px 13px -3px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    width: 140px;
+    transition: 0.3s ease;
+}
+
+.try-now:hover {
+    transform: scale(1.05);
+}
+
+.second-section{
+    /* background-image: url('./assets/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}

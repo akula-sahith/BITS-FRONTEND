@@ -1,0 +1,139 @@
+/* Full-Screen Chatbot */
+.chat-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 0px;
+    box-shadow: none;
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .chat-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    background: #f7f7f7;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Chatbox */
+  .chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+  
+  /* Message Styling */
+  .chat-message {
+    max-width: 75%;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  /* Bot Messages */
+  .bot-message {
+    background: #FFF3E0;
+    align-self: flex-start;
+    color: black;
+  }
+  
+  /* User Messages */
+  .user-message {
+    background: #4D90FE;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  /* Timestamp */
+  .chat-timestamp {
+    font-size: 12px;
+    color: #888;
+    display: block;
+    text-align: right;
+    margin-top: 3px;
+  }
+  
+  /* Input Area */
+  .chat-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background: white;
+  }
+  
+  /* Input Field */
+  .input-field {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+  }
+  .bot-p{
+    font-size: 16px;
+    color: black;
+  }
+  
+  /* Send Button */
+  .send-button {
+    background: #4D90FE;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-left: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .send-button:hover {
+    background: #3578E5;
+  }
+  
+  /* Typing Animation */
+  .typing {
+    background: #FFF3E0;
+    padding: 12px;
+    border-radius: 12px;
+    max-width: 75%;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-dots span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    opacity: 0.3;
+    animation: typingBlink 1.5s infinite;
+  }
+  
+  .typing-dots span:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .typing-dots span:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes typingBlink {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+  }
+  

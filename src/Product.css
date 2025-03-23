@@ -1,0 +1,41 @@
+.features {
+    background: white;
+    padding: 50px;
+    color: black;
+    text-align: center;
+}
+
+.product {
+    display: inline-block;
+    background-color: #1a1a1d;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.headline {
+    font-size: 36px;
+    font-weight: bold;
+    color: black !important;
+    margin-bottom: 10px;
+}
+
+.sub-headline {
+    font-size: 18px;
+    color: black !important;
+    margin-bottom: 40px;
+}
+
+.feature-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}

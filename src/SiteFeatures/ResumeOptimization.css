@@ -1,0 +1,178 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-R {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #FF9999 0%, #CC0000 100%);
+}
+
+/* Left Section */
+.left-section-R {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.text-content-R {
+    max-width: 500px;
+}
+
+.text-content-R h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.text-content-R p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Right Section */
+.right-section-R {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Input Form */
+.input-container-R {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.input-container-R:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Fields */
+.input-group-R {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group-R label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-group-R input,
+.text-area-R {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #cc0000;
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group-R input:hover,
+.text-area-R:hover {
+    background-color: #ffcccc;
+    border-color: #cc0000;
+}
+
+.input-group-R input:focus,
+.text-area-R:focus {
+    outline: none;
+    border-color: #990000;
+    box-shadow: 0 0 0 3px rgba(153, 0, 0, 0.2);
+}
+
+/* File Upload */
+.file-upload-container-R {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.file-input-R {
+    display: none;
+}
+
+.file-upload-button-R {
+    padding: 0.7rem 1rem;
+    background-color: #ffcccc;
+    border: 1px solid #cc0000;
+    border-radius: 6px;
+    color: #990000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-upload-button-R:hover {
+    background-color: #ff9999;
+}
+
+.file-name-R {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+/* Submit Button */
+.apply-button-R {
+    width: 100%;
+    padding: 1rem;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.apply-button-R:hover {
+    background-color: #990000;
+    transform: translateY(-2px);
+}
+
+.apply-button-R:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container-R {
+        flex-direction: column;
+    }
+
+    .left-section-R, .right-section-R {
+        padding: 2rem;
+    }
+
+    .file-name-R {
+        max-width: 150px;
+    }
+}

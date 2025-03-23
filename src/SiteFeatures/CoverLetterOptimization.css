@@ -1,0 +1,189 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-C {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #FF9999 0%, #CC0000 100%);
+}
+
+/* Left Section */
+.left-section-C {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.text-content-C {
+    max-width: 500px;
+}
+
+.text-content-C h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.text-content-C p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Right Section */
+.right-section-C {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Input Form */
+.input-container-C {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid #cc0000;
+}
+
+.input-container-C:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(204, 0, 0, 0.3);
+    border-color: #990000;
+}
+
+/* Input Fields */
+.input-group-C {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group-C label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #cc0000;
+}
+
+.input-group-C input,
+.input-group-C textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #cc0000;
+    border-radius: 6px;
+    background-color: #fff5f5;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group-C input:hover,
+.input-group-C textarea:hover {
+    background-color: #ffe6e6;
+    border-color: #990000;
+}
+
+.input-group-C input:focus,
+.input-group-C textarea:focus {
+    outline: none;
+    border-color: #990000;
+    box-shadow: 0 0 5px rgba(153, 0, 0, 0.5);
+}
+
+/* File Upload */
+.file-upload-container-C {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.file-input-C {
+    display: none;
+}
+
+.file-upload-button-C {
+    padding: 0.7rem 1rem;
+    background-color: #ffcccc;
+    border: 2px solid #cc0000;
+    border-radius: 6px;
+    color: #990000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-upload-button-C:hover {
+    background-color: #ff9999;
+    border-color: #990000;
+    box-shadow: 0 5px 10px rgba(153, 0, 0, 0.3);
+}
+
+.file-name-C {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+/* Submit Button */
+.generate-button-C {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #CC0000, #FF3333);
+    color: white;
+    border: 2px solid #990000;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.generate-button-C:hover {
+    background: linear-gradient(135deg, #990000, #FF6666);
+    border-color: #660000;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(153, 0, 0, 0.4);
+}
+
+.generate-button-C:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(153, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container-C {
+        flex-direction: column;
+    }
+
+    .left-section-C, .right-section-C {
+        padding: 2rem;
+    }
+
+    .file-name-C {
+        max-width: 150px;
+    }
+}
